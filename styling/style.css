@@ -1,0 +1,208 @@
+@font-face {
+    font-family: 'RobotoLight';
+    src: url('../dist/fonts/Roboto-Light.ttf');
+}
+
+@font-face {
+    font-family: 'RobotoMedium';
+    src: url('../dist/fonts/Roboto-Medium.ttf');
+}
+
+@font-face {
+    font-family: 'RobotoLBold';
+    src: url('../dist/fonts/Roboto-Bold.ttf');
+}
+
+* {
+    font-family: 'RobotoMedium', sans-serif;
+}
+
+body {
+    background-color: white;
+    padding: 0;
+    margin: 0;
+}
+
+body > h1 {
+    display: none;
+}
+
+nav {
+    background-color: #514841;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 .5em;
+    border-bottom: 3px solid #fcd900;
+}
+
+nav>ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+nav>ul>li {
+    margin-right: 2.2em;
+    color: white;
+}
+
+nav ul li>a {
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li>a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+header {
+    background-color: green;
+    width: 100%;
+    height: 200px;
+}
+
+.story-header{
+  background-image: url("../img/pau-casals-587187-unsplash.jpg");
+}
+
+/* media query for desktop  */
+
+@media only screen and (min-width: 40em) {
+
+    header>.story-header {
+        background-color: #fcd900;
+        width: 90%;
+        height: 300px;
+        -webkit-clip-path: polygon(0 0, 100% 0, 47% 100%, 0% 100%);
+        clip-path: polygon(0 0, 100% 0, 47% 100%, 0% 100%);
+    }
+
+    .story-header {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .story-header>p {
+        font-size: 20em;
+    }
+
+    .story-header>span {
+        font-size: 20px;
+        width: 6em;
+    }
+}
+
+.story-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.story-header>p {
+    font-size: 10em;
+    margin: 0;
+}
+
+.story-header>span {
+    width: 5rem;
+}
+
+main>section>h2 {
+    margin-left: 1em;
+}
+
+main section > ul {
+  display: flex;
+  list-style: none;
+  flex-direction: row;
+  overflow: scroll;
+  height: auto;
+}
+
+main> section> ul > li {
+  margin-right:2rem;
+}
+
+main> section> ul> li > article {
+    background-color: red;
+    border-radius: 10px;
+    width: 20em;
+    height: 10em;
+    margin-right: 2rem;
+    border-radius: 10px;
+}
+
+.stories-genres {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.stories-genres> li {
+  padding: 1em .5em;
+  border-radius: 10px;
+}
+
+.stories-range {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+aside {
+  margin-left: 2em;
+}
+
+form > .stories-popular {
+  list-style: none;
+  padding: 0;
+}
+
+form > .stories-popular > li {
+  padding: 1rem 1.3rem;
+  border-radius: 5px;
+  margin-bottom: 1.3rem;
+  margin-right: 2em;
+  -webkit-box-shadow: 6px 5px 27px -17px rgba(143,143,143,1);
+  -moz-box-shadow: 6px 5px 27px -17px rgba(143,143,143,1);
+  box-shadow: 6px 5px 27px -17px rgba(143,143,143,1);
+}
+
+form > .stories-popular > li > label {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+form > .stories-genres {
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  justify-items: flex-start;
+  flex-wrap: wrap;
+}
+
+form > .stories-genres > li {
+  border-radius: 5px;
+  border: .5px solid gray;
+  padding: .6rem .8em;
+  margin-bottom: 1em;
+  width: 111px;
+}
+
+footer {
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    color:white;
+    background-color: #514841;
+}

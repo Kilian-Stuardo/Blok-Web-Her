@@ -1,46 +1,155 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styling/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blobb</title>
+</head>
+
 <body>
     <h1>Hello World</h1>
     <nav>
         <img src="" alt="">
         <ul>
             <li>
-              <a href="#"><img src="" alt=""><span class="desktop-text">menu item 1</span></a>
+                <a href="/story.html"><img src="" alt=""><span class="desktop-text">bookmark</span></a>
             </li>
             <li>
-              <a href="#">
-                <img src="" alt="">
-                <span class="desktop-text">menu item 2</span>
-              </a>
+                <a href="#">
+                    <img src="" alt="">
+                    <span class="desktop-text">Log in</span>
+                </a>
             </li>
         </ul>
     </nav>
     <header>
-      <div class="story-header">
-        <p>99</p>
-        <span>verhalen voor op reis</span>
-      </div>
+        <div class="story-header">
+            <p>99</p>
+            <span>verhalen voor op reis</span>
+        </div>
     </header>
-    <main> 
-      <section>
-        <h2>Uitgelicht</h2>
-        <ul>
-          <li>
-            <article class="first-story card"></article>
-          </li>
-          <li>
-            <article class="second-story card"></article>
-          </li>
-          <li>
-            <article class="third-story card"></article>
-          </li>
-        </ul>
-        <article>
-        </article>
-      </section>
+    <main>
+        <section>
+            <h2>Uitgelicht</h2>
+            <ul>
+                <li>
+                    <article class="first-story card"></article>
+                </li>
+                <li>
+                    <article class="second-story card"></article>
+                </li>
+                <li>
+                    <article class="third-story card"></article>
+                </li>
+            </ul>
+        </section>
+        <aside class="filter-stories">
+            <div class="form-header--section">
+                <h2>Filter</h2>
+            </div>
+            <form action="">
+                <ul class="stories-popular">
+                    <li>
+                        <img src="" alt="">
+                        <label> Nieuw
+                  <input type="checkbox" value="checked">
+                </label>
+                    </li>
+                    <li>
+                        <label> Populair
+                  <input type="checkbox" value="checked" name="popular">
+                </label>
+                    </li>
+                    <li>
+                        <img src="" alt="">
+                        <label> Nummeriek
+                  <input type="checkbox" value="checked">
+                </label>
+                    </li>
+                </ul>
+
+                <p>Filter op..</p>
+                <p>Genre</p>
+                <ul class="stories-genres">
+                    <li>
+                        <label>
+                  <input type="checkbox">
+                  Avontuur
+                </label>
+                    </li>
+                    <li>
+                        <label>
+                  <input type="checkbox">
+                  Formeel
+                </label>
+                    </li>
+                    <li>
+                        <label>
+                  <input type="checkbox">
+                  Grappig
+                </label>
+                    </li>
+                    <li>
+                        <label>
+                  <input type="checkbox">
+                  Gedicht
+                </label>
+                    </li>
+                    <li>
+                        <label>
+                  <input type="checkbox">
+                  Politiek
+                </label>
+                    </li>
+                    <li>
+                        <label>
+                  <input type="checkbox">
+                  Verslag
+                </label>
+                    </li>
+                    <li>
+                        <label>
+                  <input type="checkbox">
+                  Spannend
+                </label>
+                    </li>
+                </ul>
+                <label class="stories-range">
+              Leesduur
+              <input type="range" min="1" max="5" value="3" step="1">
+            </label>
+            </form>
+            <img id="form-open-button" src="" alt="open button for filter">
+        </aside>
+        <section>
+            <ul class="stories">
+                <li class="article-stories">
+                    <div>
+                        <img class="" alt="" src="" />
+                        <img class="" alt="" src="" />
+                    </div>
+                    <p>
+                        things
+                    </p>
+                    <div>
+                        <img class="" alt="" src="" />
+                        <img class="" alt="" src="" />
+                    </div>
+                </li>
+                <li class="article-stories"></li>
+            </ul>
+
+        </section>
     </main>
+    <footer>
+        <img src="img/logo-uov-white.svg" alt="Logo">
+        <p>U-OV &copy; 2019</p>
+        <ul>
+            <li>Twitter</li>
+            <li>Facebook</li>
+        </ul>
+    </footer>
     <script src="index.js"></script>
 </body>
 <html>
