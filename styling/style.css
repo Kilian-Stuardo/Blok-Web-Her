@@ -206,3 +206,23 @@ footer {
     color:white;
     background-color: #514841;
 }
+footer> img{
+  height: 60px;
+  width: 60px;
+}
+
+a {
+
+    text-decoration: none;
+
+}
+
+nav> a> img{
+  height: 90px;
+  width: 90px;
+  display: flex;
+}
+
+nav> a> h1{
+  display: flex;
+}
