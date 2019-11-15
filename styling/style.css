@@ -57,6 +57,14 @@ nav ul li>a:visited {
     text-decoration: none;
 }
 
+nav> a> img{
+  height: 40px;
+  width: 90px;
+  display: flex;
+  flex-direction: row;
+  padding: 0.5em;
+}
+
 header {
     background-color: green;
     width: 100%;
@@ -215,14 +223,4 @@ a {
 
     text-decoration: none;
 
-}
-
-nav> a> img{
-  height: 90px;
-  width: 90px;
-  display: flex;
-}
-
-nav> a> h1{
-  display: flex;
 }
